@@ -2,9 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app-bases';
+  public aaa: string = 'Contador App';
+  public bbb: number = 10;
+  public ccc: number = 5;
+
+  acumular( valor: number) {
+    this.ccc += valor;
+  };
+
 }
